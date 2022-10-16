@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('git checkout') {
             steps {
-                git branch: 'main', credentialsId: 'git-rknaik', url: 'https://github.com/rknaik76/terraform.git'   
+                git branch: 'main', credentialsId: 'git-rnaik', url: 'https://github.com/rknaik76/terraform.git'   
             }
         }
         stage('docker login') {

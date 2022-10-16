@@ -1,7 +1,7 @@
 variable "subscription_id" {
   
 }
-# Comment 01
+# Comment 02
 variable "client_id" {
   
 }

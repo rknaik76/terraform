@@ -6,5 +6,10 @@ pipeline {
                 echo 'Hello Hello world!' 
             }
         }
+        stage('Docker Build') {
+            steps {
+      	        sh 'docker build -t node-web-app-01:latest .'
+            }
+        }
     }
 }

@@ -13,7 +13,7 @@ pipeline {
         }
         stage('docker login') {
             steps {
-                sh label: 'Docker login', script: 'docker login --username rknaik76@gmail.com --password ${JFROG_KEY}'
+                sh label: 'Docker login', script: 'docker login --username rknaik76@gmail.com --password ${JFROG_KEY} rknaik76.jfrog.io'
             }
         }
         stage('docker build') {
